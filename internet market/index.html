@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-магазин</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Інтернет-магазин</h1>
+        <div class="cart">
+            <button id="view-cart"><i class="fas fa-shopping-cart"></i> Кошик: <span id="cart-count">0</span> товарів</button>
+            Загальна сума: <span id="total-price">0</span> грн
+        </div>
+    </header>
+    <main>
+        <!-- Список товарів -->
+        <div id="products-page">
+            <!-- Електроніка -->
+            <section>
+                <h2>Електроніка</h2>
+                <div class="product-container">
+                    <div class="product" data-price="12000" data-name="Смартфон">
+                        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSQwjUfuRmuHRaPM5tWSPfCjYeHGTgnWjdPqrEYOV8Yd1Y6bA1mYAGN3sP0OcvtRtIjHxlCrSyNDWtwNKGxfgdtkUY9gPyCM7ZYLvg3Eu-xfzPCDaiySOcY&usqp=CAE" alt="Смартфон">
+                        <h3>Смартфон</h3>
+                        <p>Ціна: 12 000 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                    <div class="product" data-price="25000" data-name="Ноутбук">
+                        <img src="https://mevs.com.ua/image/cache/3312074097_noutbuk-lenovo-v15-igl-800x800.jpg" alt="Ноутбук">
+                        <h3>Ноутбук</h3>
+                        <p>Ціна: 25 000 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                    <div class="product" data-price="1500" data-name="Навушники">
+                        <img src="https://i0.wp.com/www.myhoco.com.ua/wp-content/uploads/2023/08/besprovodnye-naushniki-hoco-w40-black.webp?fit=800%2C800&ssl=1" alt="Навушники">
+                        <h3>Навушники</h3>
+                        <p>Ціна: 1 500 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                    <div class="product" data-price="8000" data-name="Планшет">
+                        <img src="https://mobilike.net.ua/image/cache/catalog/easyphoto/3377/planshet-lenovo-tab-m10-3rd-gen-4-64gb-wifi-zaae0027ua-storm-grey-2-680x630.jpg" alt="Планшет">
+                        <h3>Планшет</h3>
+                        < p>Ціна: 8 000 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Побутова техніка -->
+            <section>
+                <h2>Побутова техніка</h2>
+                <div class="product-container">
+                    <div class="product" data-price="3000" data-name="Мікрохвильова піч">
+                        <img src="https://cdn.comfy.ua/media/catalog/product/cache/5/image/600x/9df78eab33525d08d6e5fb8d27136e95/1/4/1467067_gorenje_17.jpg" alt="Мікрохвильова піч">
+                        <h3>Мікрохвильова піч</h3>
+                        <p>Ціна: 3 000 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                    <div class="product" data-price="5000" data-name="Пральна машина">
+                        <img src="https://whirlpool-store.com.ua/12004-tm_large_default/profesijna-pralna-mashina-whirlpool-awg914sd1.jpg" alt="Пральна машина">
+                        <h3>Пральна машина</h3>
+                        <p>Ціна: 5 000 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                    <div class="product" data-price="4000" data-name="Холодильник">
+                        <img src="https://bs-partner.com.ua/upload/iblock/cc0/vv1qomwkhgv7irurhve7h2ubfvgnoa5f/KGN86AI32U.jpg" alt="Холодильник">
+                        <h3>Холодильник</h3>
+                        <p>Ціна: 4 000 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                    <div class="product" data-price="2000" data-name="Електрочайник">
+                        <img src="https://i.moyo.ua/img/products/4724/7_1500.jpg" alt="Електрочайник">
+                        <h3>Електрочайник</h3>
+                        <p>Ціна: 2 000 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Одяг -->
+            <section>
+                <h2>Одяг</h2>
+                <div class="product-container">
+                    <div class="product" data-price="800" data-name="Футболка">
+                        <img src="https://duna.ua/image/cache/catalog/products/6012/6012-1-min-1000x1000.jpg" alt="Футболка">
+                        <h3>Футболка</h3>
+                        <p>Ціна: 800 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                    <div class="product" data-price="1500" data-name="Джинси">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH0fbHqOFU2hbClhwQhfZEE_b17rOGA5l7g&s" alt="Джинси">
+                        <h3>Джинси</h3>
+                        <p>Ціна: 1 500 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                    <div class="product" data-price="1200" data-name="Светр">
+                        <img src="https://isto.pt/cdn/shop/products/Cotton_Sweater_Navy_1_8ce46019-30b2-4d07-80c6-5f1cc67d2587.jpg?v=1668766115&width=1946" alt="Светр">
+                        <h3>Светр</h3>
+                        <p>Ціна: 1 200 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                    <div class="product" data-price="2500" data-name="Куртка">
+                        <img src="https://hooke.ca/cdn/shop/files/HOOKE-MEN-LIGHTWEIGHT-INSULATED-HOOD-JACKET-BLK-1.webp?v=1689773252&width=2500" alt="Куртка">
+                        <h3>Куртка</h3>
+                        <p>Ціна: 2 500 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Спорт та відпочинок -->
+            <section>
+                <h2>Спорт та відпочинок</h2>
+                <div class="product-container">
+                    <div class="product" data-price="1500" data-name="Футбольний м'яч">
+                        <img src="https://bootsvaga.com/content/images/36/480x480l50nn0/futbolnyi-miach-premier-league-flight-match-ball-22-23-93554125703260.jpg" alt="Футбольний м'яч">
+                        <h3>Футбольний м'яч</h3>
+                        <p>Ціна: 1 500 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                    <div class="product" data-price="2000" data-name="Велосипед">
+                        <img src="https://images.prom.ua/1591178322_w600_h600_1591178322.jpg" alt="Велосипед">
+                        <h3>Велосипед</h3>
+                        <p>Ціна: 2 000 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                    <div class="product" data-price="800" data-name="Гантелі">
+                        <img src="https://way4you.ua/img/product/fd/fd6ba054b7bb9b1f41b0ad9af0699184/ganteli-hromirovannye-2sht-po-15kg-original-95-1.jpg" alt="Гантелі">
+                        <h3>Гантелі</h3>
+                        <p>Ціна: 800 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                    <div class="product" data-price="1200" data-name="Кемпінговий намет">
+                        <img src="https://extremstyle.ua/storage/user_1/images%201/kak-vybrat-kempingovuyu-palatku-8.jpg" alt="Кемпінговий намет">
+                        <h3>Кемпінговий намет</h3>
+                        <p>Ціна: 1 200 грн</p>
+                        <input type="number" class="product-quantity" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                        <button class="add-to-cart">Додати до кошика</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Сторінка кошика -->
+        <div id="cart-page" style="display: none;">
+            <h2>Ваш кошик</h2>
+            <div id="cart-items"></div>
+            <p id="cart-total">Загальна сума: <span>0</span> грн</p>
+            <button id="back-to-products" class="return-to-products">Повернутися до товарів</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Контактна інформація: info@example.com</p>
+            <p>Слідкуйте за нами в соціальних мережах:</p>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            </ul>
+            <p>&copy; 2024 Інтернет-магазин. Всі права захищені.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <div id="notification" style="display: none;">Товар додано до кошика!</div>
+</body>
+</html>
